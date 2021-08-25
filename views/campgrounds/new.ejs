@@ -1,0 +1,63 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="row">
+ 
+  <div class="col-6 offset-3 bg-gradient bg-dark text-white">
+    <h1 class="text-center fs-1 text-decoration-underline ">New Campground</h1>
+    <form action = "/campgrounds" method = "POST" novalidate class="validated-form" enctype="multipart/form-data">
+      <div class="mb-3">
+          <label class="form-label" for= "title" >Title</label>
+          <input class="form-control" type="text" id="title" name= "campground[title]" required>
+         <div class="valid-feedback">
+           Looks good
+         </div>
+     </div>
+     <div class="mb-3">
+      <label for= "location" class="form-label">Location</label>
+      <input type="text" class="form-control"  id="location" name= "campground[location]" required>
+      <div class="valid-feedback">
+        Looks good
+      </div>
+    </div>
+    <div class="mb-3">
+      <div class="mb-3">
+        <label for="formFileMultiple" class="form-label">Add Images</label>
+        <input class="form-control" type="file" id="formFileMultiple" name="image" multiple>
+      </div>
+     
+     
+    </div>
+    <div class="mb-3">
+      <label for= "price-label" class="form-label">Campground Price</label>
+    <div class="input-group mb-3">
+     
+      <span class="input-group-text" id="price-label">$</span>
+      <input type="text" class="form-control" placeholder="0.00" id="price-label" aria-label="price-label" aria-describedby="price-label" name= "campground[price]" required>
+      <div class="valid-feedback">
+        Looks good
+      </div>
+    </div>
+   
+  </div>
+    
+    <div class="mb-3">
+      <label for= "description" class="form-label">Description</label>
+      <textarea type="text" class="form-control"  id="description" name= "campground[description]" required></textarea>
+      <div class="valid-feedback">
+        Looks good
+      </div>
+    </div>
+    <div class="mb-3 d-flex flex-column">
+    <button class="btn btn-success">Add Campground</button>
+  </form>
+    <a class="btn btn-info ml-2  " href= "/campgrounds">All Campgrounds</a>
+    </div>
+ 
+   
+     
+  </p>
+ 
+
+
+ </div>
+</div>

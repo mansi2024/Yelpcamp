@@ -1,0 +1,36 @@
+<% layout('layouts/boilerplate')%>
+<div class="bg-dark bg-gradient mb-4 card shadow" id="back">
+   
+<div class="container d-flex justify-content-center align-items-center mt-5 ">
+   
+    <div class="row mb-5 mt-5">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4 mb-5">
+            <div class="card shadow">
+                <img src="https://images.unsplash.com/photo-1526491109672-74740652b963?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1100&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYyNzAxNDk0OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" 
+                    alt="" class="card-img-top"/>
+                <div class="card-body mb-4">
+                    <h5 class="card-title">Login</h5>
+                    <form action="/login" method="POST" class="validated-form" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" autofocus required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <button class="btn btn-success btn-block">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
