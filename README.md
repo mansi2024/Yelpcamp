@@ -9,5 +9,3 @@ What Yelpcamp can be used for ??
 2.For Selling camp trips to customers.
 3.Consists of Authentication and security.
 
-**You can upload camping photos by creating your account here ,explore others camping trips and can review them.**
-
